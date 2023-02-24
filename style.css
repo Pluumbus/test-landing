@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500&family=Montserrat+Alternates:wght@500&family=Poppins:wght@200;400;600&display=swap');
+* {
+    font-family: 'Manrope', sans-serif;
+}
+body {
+    margin: 0 auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+Header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1.8vw;
+} 
+.logo {
+    width: 10vw;
+}  
+Header1::before {
+    position: absolute;
+    content: '';
+    margin-top: 7vw;
+    width: 79vw;
+    height: 0.1vw;
+    background-color: #2A2A2A;
+    opacity: 15%;
+}
+
+Header1 name {
+    padding-left: 2vw;
+    width: 8vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6vw;
+    line-height: 0.8vw;    
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
+
+}
+map img, mapclick img, icon img {
+    padding: 1vw;
+    width: 2vw;
+}
+mapclick img {
+    width: 1vw;
+}
+map {
+    width: 13vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6vw;
+    line-height: 0.8vw;    
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
+}
+mapclick {
+    width: 10vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6vw;
+    line-height: 0.8vw;    
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
+    cursor: pointer;
+}
+mapclick a {
+    color: #2A2A2A;
+    text-decoration: none;
+}
+#maphover {
+    position: absolute;
+    width: 10vw;
+    top: 3.5vw;
+    margin-left: -4vw;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+mapclick::after {
+    content: '';
+    background-image: url(/img/Пунктир.svg);
+    background-repeat: no-repeat;
+    height: 0.2vw;
+    position: absolute;
+    width: 5.4vw;
+    margin-top: 1.7vw;
+    margin-left: 2.9vw;
+    transition: all 0.3s ease-in;
+}
+mapclick:hover::after {
+    width: 2.8vw;
+}
+icon {
+    width: 12vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6vw;
+    line-height: 0.8vw;    
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
+    cursor: pointer;
+}
+icon::after {
+    content: '';
+    background-image: url(/img/Пунктир.svg);
+    background-repeat: no-repeat;
+    height: 0.2vw;
+    position: absolute;
+    width: 6.52vw;
+    margin-top: 2.5vw;
+    margin-left: 4.4vw;
+    transition: all 0.3s ease-in;
+}
+icon:hover::after {
+    width: 2.8vw;
+}
+webicons {
+    width: 12.8vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6vw;
+    line-height: 0.8vw;    
+    display: flex;
+    align-items: center;
+    color: #2A2A2A;
+    padding-left: 1vw;
+}
+webicons img {
+    padding-left: 0.4vw;
+    width: 2vw;
+    cursor: pointer;
+}
+call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11vw;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.6vw;
+    line-height: 1.3vw;    
+    color: #2A2A2A;
+    padding-left: 1vw;
+}
+call b {
+    padding-left: 0.2vw;
+    font-size: 1vw;
+    
+}
+call::before {
+    content: '';
+    border-radius: 0.1vw;
+    position: absolute;
+    margin-left: -9vw;
+    margin-top: 0.5vw;
+    background: #20C863;
+    width: 0.2vw;
+    height: 0.2vw;
+}
+call::after {
+    content: '';
+    background-image: url(img/phone.svg);
+    background-repeat: no-repeat;
+    width: 0.42vw;
+    height: 0.42vw;
+    position: absolute;
+    margin-left: 6vw;
+    margin-top: 3vw;
+}
+txt {
+    cursor: pointer;
+}
+Header2 {
+    padding: 4vw 6.5vw;
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 0.6vw;
+line-height: 1.3vw;
+display: flex;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+
+color: #2A2A2A;
+}
+Header2 p {
+    cursor: pointer;
+    padding-left: 4.35vw;
+}
+Header2 p:hover {
+    color: red;
+}
+main {
+    margin: -3vw 0vw 0vw 10vw;
+    padding: -5vw 0vw 0vw 10vw;
+    background-image: url(/img/bg.svg); 
+    background-size: 90vw;
+    width: 100vw;
+    height:100vw;
+    background-repeat: no-repeat;
+}
+bg {
+    background: linear-gradient(180deg, rgba(22, 26, 30, 0.75) 0%, rgba(22, 26, 30, 0.5925) 36.3%);
+    position:absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 46vw;
+    background-size: cover;
+}
+main h1 {
+    padding: 1vw 0 0 5vw;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 5vw;    
+    letter-spacing: 0.1vw;
+    width: 56vw;
+    color: #FFFFFF;}
+main p {
+    margin-top: -1vw;
+    padding-left: 5vw;
+    color: #FFFFFF;
+    font-size: 1.7vw;
+}
+btn1 {
+    margin-left: 5.5vw;
+    position: absolute;
+    width: 18vw;
+    height: 1.5vw;
+    background-color: #FD2016;
+    border-radius: 8vw;
+    border:solid 2vw #FD2016;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+btn1::after {
+    position: absolute;
+    content: '';
+    height: 5.3vw;
+    width: 1vw;
+    background-color: #FFFFFF;
+    transform: skew(-20deg);
+    opacity: 0;
+    margin-left: -16vw;
+
+}
+btn1:hover::after {
+    animation-name: sliding;
+    animation-duration: 3s;
+    animation-delay:infinite;
+    opacity: 0%;
+}
+@keyframes sliding {
+    0% {
+        margin-left: -16vw;
+        opacity: 50%;
+    }
+    100% {
+        margin-left: 16vw;
+        opacity: 7%;
+    }
+}
+btn2::after {
+    position: absolute;
+    content: '';
+    height: 5.3vw;
+    width: 1vw;
+    background-color: #FFFFFF;
+    transform: skew(-20deg);
+    opacity: 0;
+    margin-left: -16vw;
+}
+btn2:hover::after {
+    animation-name: sliding;
+    animation-duration: 3s;
+    animation-delay:infinite;
+    opacity: 0%;
+}
+#arrow {
+    display: block;
+    width: 1.2vw;
+    margin-left: -0.4vw;
+    transition: transform 0.4s ease;
+
+}
+btn1:hover {
+    background-color: #de1208;
+    border:solid 2vw #de1208;
+}
+btn1 p {
+    margin: 0 0 0 -4vw;
+    width: 14vw;
+    font-size: 0.9vw;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+btn2 {
+    width: 22vw;
+    height: 5.5vw;
+    margin-left: 30vw;
+    position: absolute  ;
+    background: rgba(0, 0, 0, 0.5);
+    border: rgba(255, 255, 255, 0.5) solid 0.1vw;
+    border-radius: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.img1 {
+    width: 2vw;
+}
+btn2 p {
+    margin: 0 0 0 -3.8vw;
+    font-size: 0.9vw;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.5vw;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section1 p {
+    font-size: 0.9vw;
+    color: #FFFFFF;
+    font-weight: 400;
+    line-height: 1.5vw;
+    display: flex;
+    flex-direction: column;
+}
+section1 {
+    position: absolute;
+    margin-top: 16.3vw;
+    width: 20vw;
+}
+section1 img {
+    margin-top: -6vw;
+    margin-left: 20vw;
+}
+.Acc, .Acc1, .Acc2, .Acc3 {
+    width: 0.8vw;
+    position: absolute;
+    margin: -3vw 0 0 5vw;
+}
+section2 {
+    position: absolute;
+    margin-top: 16.3vw;
+    margin-left: 20vw;
+    width: 15vw;
+}
+section2 p, section3 p, section4 p {
+    font-size: 0.9vw;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 1.5vw;
+}
+section2 img {
+    margin-top: -7vw;
+    margin-left: 25vw;
+}
+section3 {
+    position: absolute;
+    margin-top: 16.3vw;
+    margin-left: 45vw;
+    width: 10vw;
+}
+section3 img {
+    margin-top: -6vw;
+    margin-left: 17vw;
+}
+section4 {
+    position: absolute;
+    margin-top: 16.3vw;
+    margin-left: 60vw;
+    width: 25vw;
+}
+scroll {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 9vw;
+    left: 1.5vw;
+    color: rgba(16, 15, 15, 0.2);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+}
+#line {
+    position: absolute;
+    top: 16vw;
+    left: 4.8vw;
+    width: 0.1vw;
+}
+#mouse {
+    position: absolute;
+    top: 45.5vw;
+    left: 4.2vw;  
+    transition: transform 0.8s ease-in;
+    width: 1.5vw;
+}
+popup {
+    left: 35vw;
+    top: 5vw;
+    position: absolute;
+    width: 30vw;
+    height: 40vw;
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+popup h1 {
+    word-wrap: break-word;
+    line-height: normal;
+    font-weight: 500;
+    width: 20vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+}
+popup p {
+    line-height: normal;
+    font-weight: 400;
+    width: 22vw;
+    font-size: 1.2vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+}
+popup p1 {
+    font-size: 0.8vw;
+    display: flex;
+    margin-left: -7vw;
+    margin-top: 2vw;
+    }
+#input {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 23vw;
+    height: 5vw;
+    border-radius: 10vw;
+}
+#input::placeholder {
+    font-size: 1.5vw;
+    opacity: 0.4;
+}
+#input { 
+    -moz-appearance: textfield;
+  }
+#input::-webkit-inner-spin-button { 
+    display: none;
+  }
+popup p2 {
+    margin-top: 2vw;
+    text-align: center;
+    width: 19.5vw;
+    background-color: #FD2016;
+    border-radius: 8vw;
+    border:solid 2vw #FD2016;
+    font-weight: 500;
+    cursor: pointer;
+}
+popup accept {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: center;
+}
+#btn {
+width: 1.5vw;
+height: 1.5vw;
+background-color: #FFFFFF;
+border-radius: 0.4vw;
+margin-left: 1.5vw;
+margin-right: 2vw;
+transition: all 0.7s ease;
+}
+#btn:hover {
+    background-color: #f7716a;
+}
+
+popup text {
+    font-size: 0.9vw;
+    width: 19vw;
+}
+popup c {
+    color: red;
+}
+#stroke {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    cursor: pointer;
+}
+#menu {
+    position: absolute;
+     display: none;
+}
+menu {
+    display: none;
+}
+.active {
+    display: block;
+}
+.active-color {
+    background-color: #FFFFFF;
+    position: relative;
+    color: #2A2A2A;
+
+}
+@media screen and (min-width: 992px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width:400px) {
+    call {
+        color: #FFFFFF;
+    }
+    scroll,#mouse,#line,map,mapclick,icon,webicons,Header1 name,Header2,call::after,Header1::before, btn2 img , #arrow{
+        display: none;
+    }
+    Header1::before {
+        display: none;
+    }
+    Header1 {
+        margin: 0;
+        padding: 0;
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 28rem;
+        z-index: 100;
+        /* background-color:rgba(255, 255, 255, 0.4); */
+    }
+    .logo,call {
+        width: 10rem;
+        font-size:0.7rem;
+        line-height: 2rem;
+    }
+    call b {
+        font-size: 1rem;
+    }
+    section3,section4 {
+        margin-left: 0;
+    }
+    main,bg {
+        margin: 0;
+        padding: 0;
+        width: 28rem;
+        height: 25rem;
+        background-size: 50rem;
+    }
+    main h1 {
+        margin-top: 8rem;
+        width: 19.5rem;
+        font-size: 2rem;
+        line-height: 10vw;
+    }
+    main p {
+        font-size: 1rem;
+        width: 20rem;
+    }
+    section1 p,section2 p,section3 p,section4 p {
+        color: #2A2A2A;
+        margin-top: 14rem;
+    }
+    btn1 {
+        margin-top: 2rem;
+        width: 24rem;
+        height: 4rem;
+        border-radius: 10rem;
+    }
+    btn1 p {
+        display: flex;
+        line-height: 1rem;
+        text-align: center;
+    }
+    btn2 {
+            width: 25rem;
+            height: 5rem;
+            border-radius: 10rem;
+            margin-top: 10rem;
+            margin-left: 1.5rem;
+    }
+    section1 p,section2 p, section3 p , section4 p {
+     line-height: 1.5rem;
+    }
+    section2 p,section2 {
+        margin-top: 13rem;
+        width: 11rem;
+        margin-left: 6rem;
+    }
+    section3 p,section3{
+        margin-top: 9rem;
+        margin-left: 6rem;
+        width: 1rem;
+    }
+    section4 p, section4 {
+        margin-top: 13rem;
+        width: 12rem;
+    }
+
+    .Acc {
+        width: 1.4rem;
+        margin-top: 12rem;
+    }
+    .Acc1 {
+        width: 1.4rem;
+        margin-top: 10rem;
+        margin-left: 7.5rem;
+    }
+    .Acc2 {
+        width: 1.4rem;
+        margin-top: 7.3rem;
+        margin-left: 7.5rem;
+    }
+    .Acc3 {
+        width: 1.4rem;
+        margin-top: 10rem;
+    }
+    #menu {
+        display: block;
+        width: 1.5rem;
+        margin-left: 13rem;
+        margin-top: 1rem;
+    }
+    menu {
+        display: none;
+        top:5rem;
+        position: absolute;
+        width: 25.5rem;
+        height: 60rem;
+        background-color: #FFFFFF;
+        z-index: 105;
+        text-transform: uppercase;
+    }
+    menu p {
+        margin-top: 2rem;
+    }
+    menu p1 {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        opacity: 0.5;
+        text-transform: none;
+    }
+    menu p2 {
+            display: flex;
+            flex-direction: column;
+            text-transform: none;
+    }
+  }

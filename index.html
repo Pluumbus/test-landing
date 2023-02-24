@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header1
+    >
+        <a href="/"><img class='logo'src="/img/Логотип.svg" alt="Logo"></a>
+        <name>Ремонтируем двигатели Hyundai и Kia с 2012 года </name>
+        <map><img src="/img/Карта (1).svg" alt="Map"></img>Адрес автоцентра: Москва, Шоссейный проезд, с4 а/2</map>
+        <mapclick><img src="/img/Vector.svg" alt="MapSign"></img> <b><a href='https://yandex.kz/maps/-/CCUGNDHO3D' target="_blank">Смотреть на карте</a></b></mapclick> <img id="maphover" src="/img/pKESv7DjFPU.jpg" alt="map">
+        <!-- <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.kz/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+        <a href="https://yandex.kz/maps/213/moscow/house/shosseyny_proyezd_s4a_2/Z04YcQdpS0wHQFtvfXtxd3RjZg==/?ll=37.710383%2C55.706823&utm_medium=mapframe&utm_source=maps&z=17.68" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a>
+        <iframe src="https://yandex.kz/map-widget/v1/?ll=37.710383%2C55.706823&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4MDA3NxJE0KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINCo0L7RgdGB0LXQudC90YvQuSDQv9GA0L7QtdC30LQsINGBNNCQLzIiCg1R1hZCFcTTXkI%3D&z=17.68" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+        </iframe></div>  
+
+     Был вариант сделать что бы открывался как DOM Элемент но я почему то начал делать не на реакте , поэтому не осуществил эту затею.-->
+        <icon><img src="/img/Иконка.svg" alt="Icon"><b>Рассчитать стоимость ремонта за 45 сек</b></icon>
+        <webicons>Задайте вопрос, мы сейчас онлайн<img src="/img/Group 5381.svg" alt="Whatsapp"><img src="/img/Group 5382.svg" alt="Telegram"><img src="/img/Group 5383.svg" alt="Viber"></webicons>
+        <call id="call">Звоните Пн-Сб 10:00 - 21:00 <b>+7 (925) 103 33 30 <img  style='width: 0.8vw;'src="/img/Стрелкк.svg" alt="Arrow"></b><txt onclick="openPop(1)">Заказать звонок</txt><img id='menu' src="/img/Меню.svg" alt="Menu"></call>
+    </Header1>  
+    <Header2>
+        <p>Главная</p>
+        <p>Услуги</p>
+        <p>Модели двигателей</p>
+        <p>Отзывы</p>
+        <p>Стоимость</p>
+        <p>Примеры работ</p>
+        <p>Полезные статьи</p>
+        <p>О компании</p>
+        <p>Контакты</p>
+    </Header2>
+    <main>
+        <bg>
+         <h1>Профессиональный <b>ремонт
+        двигателей</b> HYUNDAI и KIA
+        <b>с гарантией 1 год</b> за 4-7 дней
+        </h1>
+        <p>в специализированном автосервисе полного цикла</p>
+        <btn1><p>Начать расчет стоимости ремонта вашего двигателя </p><img id="arrow" src="/img/Group (1).svg" alt="Arrow"></btn1>
+        <btn2><img class="img1" src="img/Vector (2).svg" alt="Icon"> <p class="text">Узнайте стоимость по WhatsApp</p></btn2>
+        <section1><img class="Acc" src="img/Галочка.svg" alt=""> <p><b>Без предоплаты.</b>Оплата после ремонта</p> <img src="/img/Line 27.svg" alt=""></section1>
+        <section2><img class="Acc1" src="img/Галочка.svg" alt=""> <p><b>Работаем официально</b> c оформлением заказ-нарядов и чеков</p> <img src="/img/Line 27.svg" alt=""></section2>
+        <section3><img class="Acc2" src="img/Галочка.svg" alt=""> <p><b>Оригинальные запчасти</b></p> <img src="/img/Line 27.svg" alt=""></section3>
+        <section4><img class="Acc3" src="img/Галочка.svg" alt=""> <p><b>Лучшие цены на рынке</b> благодаря прямым поставкам запчастей и собственному цеху механической обработки</p></section4>
+    </bg>
+</main>
+<scroll>Scroll Down </scroll><img id="line" src="/img/Линия.svg" alt="Line"><img id="mouse" src="/img/Иконка мышки.svg" alt="Mouse">
+<popup id="open"><h1>Быстро оставить заявку</h1>
+    <p>Введите номер — позвоним вам в течение 5-10 минут в рабочее время</p> 
+    <p1>Введите ваш номер телефона </p1>
+    <input id="input" type="number" max="11"  placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+    <p2 onclick="openPop(2)">Перезвоните мне!</p2>
+   <accept> <etocheckbox id="btn"></etocheckbox><text>Нажимая кнопку вы соглашаетесь  с условиями <c>Политики конфиденциальности</c></text></accept>
+   <img  onclick="openPop(2)" id="stroke" src="img/Vector (Stroke).svg" alt="Stroke">
+</popup>
+    <!-- Так же и тут , в реакте я бы сделал все намного быстрее и проще) -->
+    <menu><p>УСЛУГИ</p><p1>Ремонт дивгателей KIA</p1><p1>Ремонт двигателей HYundai</p1><p>Модели двигателей</p><p>Отзывы</p><p>Стоимость</p><p>Примеры работ</p><p>Полезные статьи</p><p>О компании</p><p>Контакты</p>
+    <menu1 style="align-items: center;display: flex; flex-direction: row;margin-top: 2rem;"><img style="width:5rem;" src="img/Карта (1).svg" alt="Map"><p2>Адрес автоцентра: <b>Шоссейный проезд, с4 а/2</b></p2></menu1>
+<menu3 style="align-items: center;display: flex; flex-direction: row;margin-top: 5rem;"> <img style="width:5rem;" src="img/Иконка.svg" alt="icon"><p2>Рассчитать стоимость ремонта <b>за 45 сек.</b></p2></menu3></menu>
+<script src="script.js"></script>
+</body>
+</html>
